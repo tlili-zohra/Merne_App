@@ -4,7 +4,7 @@ function App() {
   const [items, setItems] = useState([]);
 
   useEffect(() => {
-    fetch("/api/items")
+    fetch("https://merne-app-backend1.onrender.com/api/items")
       .then((res) => res.json())
       .then((data) => {
         console.log("Fetched items:", data);
